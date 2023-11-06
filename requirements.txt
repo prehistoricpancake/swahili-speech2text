@@ -1,7 +1,6 @@
 streamlit==1.27.2
 streamlit-audiorecorder==0.0.4
 requests
-ffmpeg-python
-pydub
+ffmpeg
 
 
