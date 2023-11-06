@@ -2,7 +2,6 @@ import streamlit as st
 from audiorecorder import audiorecorder
 import requests
 import os
-from dotenv import load_dotenv
 import time
 
 
@@ -22,7 +21,7 @@ if len(audio) > 0:
     st.write(f"Frame rate: {audio.frame_rate}, Frame width: {audio.frame_width}, Duration: {audio.duration_seconds} seconds")
     st.write('Storing audio file, fetching model in a bit')
 
-load_dotenv()
+
 
 if os.path.exists('audio.wav'):
 
